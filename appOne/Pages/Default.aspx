@@ -32,6 +32,7 @@
             <!-- The following content will be replaced with the user name when you run the app - see App.js -->
             initializing...
         </p>
+        <p id="newTag">Här kommer ny text att synas</p>
     </div>
 
 </asp:Content>

@@ -2,10 +2,24 @@
 
 ExecuteOrDelayUntilScriptLoaded(initializePage, "sp.js");
 
-function initializePage()
-{
+function initializePage() {
     var context = SP.ClientContext.get_current();
     var user = context.get_web().get_currentUser();
+
+    var web = context.get_web();
+    context.load(web);
+    context.executeQueryAsync(function () {
+        var webTitle = web.get_title();
+        var webUrl = web.get_url();
+        console.log(webTitle);
+        console.log(webUrl);
+        var newTag = document.getElementById("newTag");
+        var br = document.createElement("br");
+        $("#DeltaPlaceHolderPageTitleInTitleArea").text("New Page Title");
+        $("#newTag").text("Page url: " + webUrl);
+        newTag.appendChild(br);
+        $("#newTag").append("Page title: " + webTitle);
+    });
 
     // This code runs when the DOM is ready and creates a context object which is needed to use the SharePoint object model
     $(document).ready(function () {

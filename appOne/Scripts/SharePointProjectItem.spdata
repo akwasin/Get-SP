@@ -7,5 +7,11 @@
     <ProjectItemFile Source="jquery-1.9.1.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="jquery-1.9.1.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="init.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="MSAjax.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SP.Core.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SP.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SP.Runtime.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="SP.UI.Dialog.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
